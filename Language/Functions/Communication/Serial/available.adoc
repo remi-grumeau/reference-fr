@@ -24,7 +24,7 @@ Retourne le nombre d'octets (caractères) disponibles à la lecture à partir du
 
 [float]
 === Paramètre
-`_Serial_`: objet port série. Voir la liste des ports série disponibles pour chaque carte sur la :../../serial[page d’accueil Série].
+`_Serial_`: objet port série. Voir la liste des ports série disponibles pour chaque carte sur la link:../../serial[page d’accueil Série].
 
 
 [float]
