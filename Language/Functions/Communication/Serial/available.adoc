@@ -13,7 +13,7 @@ Commande: Serial.available()
 === Description
 Retourne le nombre d'octets (caractères) disponibles à la lecture à partir du port série. Il s'agit de données déjà arrivées et stockées dans le tampon de réception série (qui contient 64 octets).
 
-`Serial.available()` est herité de la classe utilitaire :../../stream[Stream].
+`Serial.available()` est herité de la classe utilitaire link:../../stream[Stream].
 [%hardbreaks]
 
 
