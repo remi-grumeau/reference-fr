@@ -1,5 +1,5 @@
 ---
-title: Serial.begin()
+commande: Serial.begin()
 ---
 
 
@@ -14,27 +14,27 @@ title: Serial.begin()
 
 [float]
 === Description
-Sets the data rate in bits per second (baud) for serial data transmission. For communicating with Serial Monitor, make sure to use one of the baud rates listed in the menu at the bottom right corner of its screen. You can, however, specify other rates - for example, to communicate over pins 0 and 1 with a component that requires a particular baud rate.
+Définit le débit de données en bits par seconde (BAUD) pour la transmission de données série. Pour communiquer avec Serial Monitor, assurez-vous d'utiliser l'un des taux de bauds répertoriés dans le menu dans le coin inférieur droit de son écran. Vous pouvez cependant spécifier d'autres taux - par exemple, pour communiquer sur les broches 0 et 1 avec un composant qui nécessite un taux de bauds particulier.
 
-An optional second argument configures the data, parity, and stop bits. The default is 8 data bits, no parity, one stop bit.
+Un deuxième argument facultatif configure les données, la parité et les bits d'arrêt. La valeur par défaut est 8 bits de données, pas de parité, un bit d'arrêt.
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Syntaxe
 `_Serial_.begin(speed)` +
 `_Serial_.begin(speed, config)`
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page]. +
-`speed`: in bits per second (baud). Allowed data types: `long`. +
-`config`: sets data, parity, and stop bits. Valid values are: +
+=== Paramètres
+`_Serial_`: objet de port série. Voir la liste des ports série disponibles pour chaque carte sur le lien :../../serial[Serial main page]. +
+`speed`: en bits par seconde (baud). Types de données autorisées: `long`. +
+`config`: Définit les données, la parité et les bits d'arrêt. Les valeurs valides sont: +
 `SERIAL_5N1` +
 `SERIAL_6N1` +
 `SERIAL_7N1` +
-`SERIAL_8N1` (the default) +
+`SERIAL_8N1` (par défaut) +
 `SERIAL_5N2` +
 `SERIAL_6N2` +
 `SERIAL_7N2` +
@@ -58,8 +58,8 @@ An optional second argument configures the data, parity, and stop bits. The defa
 
 
 [float]
-=== Returns
-Nothing
+=== Retourne
+Rien
 
 --
 // OVERVIEW SECTION ENDS
@@ -72,26 +72,26 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Examples
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
 [source,arduino]
 ----
 void setup() {
-    Serial.begin(9600); // opens serial port, sets data rate to 9600 bps
+    Serial.begin(9600); // Ouvre le port série, défini le débit de données à 9600 bps
 }
 
 void loop() {}
 ----
 [%hardbreaks]
 
-*Arduino Mega example:*
+*Exemple Arduino Mega:*
 [source,arduino]
 ----
-// Arduino Mega using all four of its Serial ports
+// Utilisation des 4 ports série de l’Arduino Mega
 // (Serial, Serial1, Serial2, Serial3),
-// with different baud rates:
+// chacun ayant un débit de données différent
 
 void setup() {
   Serial.begin(9600);
@@ -107,12 +107,13 @@ void setup() {
 void loop() {}
 ----
 [%hardbreaks]
-Thanks to Jeff Gray for the mega example
+Merci à Jeff Gray pour cet exemple pour les cartes Mega
 
 
 [float]
-=== Notes and Warnings
+=== Notes et avertissements
 For USB CDC serial ports (e.g. `Serial` on the Leonardo), `Serial.begin()` is irrelevant. You can use any baud rate and configuration for serial communication with these ports. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+Pour les ports série CDC en USB (ex. `Serial` sur carte Leonardo), `Serial.begin()` n'est pas pertinent. Vous pouvez utiliser n’importe quel configuration ou débit de données avec ces ports. Vous pouvez consulter la liste des ports série disponibles pour chaque carte ici :../../serial[Serial main page]
 [%hardbreaks]
 
 --
