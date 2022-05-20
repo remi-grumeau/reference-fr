@@ -1,5 +1,5 @@
 ---
-title: Serial.end()
+Commande: Serial.end()
 ---
 
 
@@ -14,23 +14,23 @@ title: Serial.end()
 
 [float]
 === Description
-Disables serial communication, allowing the RX and TX pins to be used for general input and output. To re-enable serial communication, call link:../begin[Serial.begin()].
+Désactive les communication série, permettant aux pin RX et TX d’être utilisés comme entrée et sortie générique. Pour réactiver la communication série, utiliser link:../begin[Serial.begin()].
 [%hardbreaks]
 
 
 [float]
-=== Syntax
+=== Syntaxe
 `_Serial_.end()`
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Paramètre
+`_Serial_`: objet port série. Voir la liste des ports série disponibles pour chaque carte sur la link:../../serial[page d’accueil Série].
 
 
 [float]
-=== Returns
-Nothing
+=== Retourne
+Rien
 
 --
 // OVERVIEW SECTION ENDS
